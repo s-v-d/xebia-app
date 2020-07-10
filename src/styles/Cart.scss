@@ -1,0 +1,44 @@
+.Cart__div {
+  min-height: 100px;
+  max-height: 400px;
+  width: 300px;
+  overflow: scroll;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+  right: 52px;
+  background: white;
+  border: 1px solid;
+  &.show {
+    display: block;
+  }
+  &.hide {
+    display: none;
+  }
+  .cart-item {
+    height: 100px;
+    padding: 10px;
+    outline: 1px solid;
+    .image-container {
+      position: relative;
+      display: inline-block;
+      width: 100px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .product-details {
+      display: inline-block;
+      width: calc(100% - 100px);
+      .title {
+        text-align: left;
+        padding: 10px;
+      }
+      .qty {
+        text-align: right;
+      }
+    }
+  }
+}
